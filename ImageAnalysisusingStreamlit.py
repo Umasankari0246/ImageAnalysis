@@ -1,7 +1,7 @@
 import google.generativeai as genai
 import streamlit as st
 from PIL import Image
-genai.configure(api_key="AIzaSyC4D6pmJxEKHsbCuRpqSDHaMKRcYkDhfRQ")
+genai.configure("API KEY")
 model=genai.GenerativeModel('gemini-2.5-flash')
 st.title ("Image Q&A with Gemini")
 a=st.file_uploader("Upload an image", type = ["jpg","jpeg","png"])
